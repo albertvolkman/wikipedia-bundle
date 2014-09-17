@@ -1,0 +1,27 @@
+{
+    "name": "albertvolkman/wikipedia-bundle",
+    "type": "symfony-bundle",
+    "description": "Integrates the Wikipedia API into your Symfony2 application",
+    "keywords": ["wikipedia", "bundle", "web service", "curl", "api"],
+    "homepage": "https://github.com/albertvolkman/wikipedia-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Albert Volkman",
+            "email": "albert.volkman@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/albertvolkman/wikipedia-bundle/issues"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "~2.2",
+        "misd/guzzle-bundle": "1.1.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlbertVolkman\\Wikipedia\\": "src/Wikipedia/"
+        }
+    }
+}

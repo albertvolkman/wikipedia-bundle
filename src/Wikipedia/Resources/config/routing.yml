@@ -1,0 +1,4 @@
+wearables_db_wearable_db_homepage:
+    type: rest
+    defaults: {_format: html}
+    resource: WearablesDB\Bundle\DeviceBundle\Controller\DeviceController

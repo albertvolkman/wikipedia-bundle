@@ -1,0 +1,18 @@
+services:
+    wikipedia.action_opensearch:
+        class: AlbertVolkman\Wikipedia\Action\OpenSearch
+        arguments:
+            - @guzzle.client
+    wikipedia.action_parse:
+        class: AlbertVolkman\Wikipedia\Action\Parse
+        arguments:
+            - @guzzle.client
+    wikipedia.action_query:
+        class: AlbertVolkman\Wikipedia\Action\Query
+        arguments:
+            - @guzzle.client
+            - @wikipedia.helper_parser
+    wikipedia.helper_parser:
+        class: AlbertVolkman\Wikipedia\Helper\Parser
+        arguments:
+            - @wikipedia.action_parse
